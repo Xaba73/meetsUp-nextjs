@@ -24,14 +24,8 @@ export const getStaticProps = async () => {
     props: {
       meetups: DUMMY_MEETSUP,
     },
+    revalidate: 1,
   };
 };
-// export async function getStaticProps() {
-//   return {
-//     props: {
-//       meetups: DUMMY_MEETSUP,
-//     },
-//   };
-// }
 
 export default HomePage;
